@@ -7,6 +7,7 @@
 --botao-ativo: #8c0000;
 --botao-inativo: #8b8b8b;
 --texto-fundo: #565656;
+--vermelho: #000000;
 }
 
 body{
@@ -88,11 +89,33 @@ font-family: "chakra Petch", sans-serif;
 }
 
 .contador{
-    font-size: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
- @media screen and (min-width: 768px){
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--botao-ativo);
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 768px){
     .botoes{
         display: flex;
     }
